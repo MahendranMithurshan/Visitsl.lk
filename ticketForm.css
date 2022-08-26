@@ -1,0 +1,151 @@
+.container {
+   /* margin: 100px 200px 100px 200px; */ 
+   margin-left: 10px;
+   margin-right: auto;
+  /* position:relative;
+    align-items: center; */
+  /* justify-content: center; */
+}
+
+body{
+  background-color:#B0E0E6;
+    margin-left: 40%;
+    margin-right: auto;
+}
+
+.selection {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: none;
+}
+
+.purchase {
+  display: none;
+}
+
+.form-item {
+  min-width: 200px;
+  padding: 10px 10px 10px 10px;
+}
+
+.ticket-cost-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.cost {
+  padding: 10px;
+}
+
+.card {
+  margin: 20px;
+  padding: 20px;
+  width: 200px;
+  min-height: 100px;
+  display: grid;
+  /* grid-template-rows: 20px 50px 1fr 50px; */
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+    background: radial-gradient(#f588d8, #c0a3e5);
+ 
+}
+.selection { position: relative;
+  width: 350px;
+  height: 500px;
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+  background: #E0FFFF;
+  box-shadow: 14px 14px 20px#8DA399, -14px -14px 20px#8DA399;
+}
+  
+.card:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+    background: radial-gradient(#fbc1cc, #fa99b2);
+  }
+/* 
+  label, input, button {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+  } */
+  select {
+    background: #ecf0f3;
+    padding: 10px;
+    padding-left: 10px;
+    min-height: 45px;
+    font-size: 14px;
+    border-radius: 3px;
+    min-width: 200px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+  }
+
+
+.card-container{
+  position: relative;
+}
+.card-remove{
+  position:absolute;
+  right: 0px;
+  top: 0px;
+}
+
+
+
+  .overall-cost{
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .total-ticket-amount{
+    position:absolute;
+    right: 0px;
+    bottom: 3px;
+  }
+
+  
+/* Modal CSS */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: whitesmoke;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

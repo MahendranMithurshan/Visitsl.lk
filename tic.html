@@ -1,0 +1,169 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./ticketForm.css" />
+    <title>Ticket Booking</title>
+  </head>
+  <body>
+
+    <div class="container">
+    <div class="info">
+      <div  class="form-i">
+        <div class="intro">
+          <h2>Ticket booking</h2>
+        </div>
+        <div class="info">
+            <p>Note :- For children under age 3, entrance is <strong>free</strong>.</p>
+        </div>
+        <div class="btn-form-selection">
+          <button class="btn btn-add">Add tickets</button>
+        </div>
+        
+        
+        <div class="selection">
+          <div class="add-ticket">
+            <!-- Ticket Form/price will be display here -->
+            <form  onsubmit="submit" class="form-ticket">
+              <div class="form-item">
+                <div class="form-label ticket-type">Ticket Type</div>
+                <div class="form-input">
+                  <select class="form-type">
+                    <option value="FAP">Foreign Adult Pass</option>
+                    <option value="FCP">Foreign Child Pass</option>
+                    <option value="LAP">Local Adult Pass</option>
+                    <option value="LCP">Local Child Pass</option>
+                    <option value="APF">Annual Pass-Foreign</option>
+                    <option value="APL">Annual Pass-Local</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-item">
+                <div class="form-label duration">Duration</div>
+                <div class="form-input">
+                  <select class="ticket-duration">
+                    <option value="3hrs">03 hrs</option>
+                    <option value="12hrs">12 hrs</option>
+                    <option value="24hrs">24 hrs</option>
+                    <option value="48">48 hrs</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-item">
+                <div class="form-label food-token">Food token</div>
+                <div class="form-input-radio">
+                  <input
+                    type="radio"
+                    id="needed"
+                    name="food_token"
+                    value=1
+                  />
+                  <label for="true">Needed</label><br />
+                  <input
+                  type="radio"
+                  id="notNeeded"
+                  name="food_token"
+                  value=0
+                  checked
+                />
+                <label for="true">Not Needed</label><br />
+                </div>
+                <div class="form-item ticket-cost-box">
+                    <div class="form-label cost">Ticket cost</div>
+                    <div class="ticket-cost cost">LKR <span class="tickect-amount">0.00</span></div>
+                </div>
+              </div>
+              <div class="form-item">
+                <button type="submit" class="btn btn-ticket-submit">Add to order</button>
+              </div>
+            </form>
+          </div>
+          <div class="btn btn-cancel-form-item">
+            <button class="btn btn-cancel-form">Cancel</button>
+          </div>
+        </div>
+        <div class="purchase">
+          <div class="preview">
+            <!-- Order & total cost will be display here -->
+            <div class="overall-order">
+                <p>Selected Tickets</p>
+                <div class="selected-ticket-list">
+
+                </div>
+
+            </div>
+            <div class="overall-cost">
+                <div> <strong>Total cost: </strong> 
+                    <div class="total-ticket-amount">
+                         LKR 
+                         <span class="total-ticket-amount-numeric">0.00
+
+                         </span>
+                    </div>     
+                </div>
+            </div>
+                
+            </div>
+          </div>
+        </div>
+        
+        <div class="no-ticket">
+            Not selected
+        </div>
+        <!-- Submition -->
+        <div class="form-submit">
+          <button  class="btn btn-main-submit">Place Order</button>
+        </div>
+
+
+    
+        
+      </div>
+      <!-- Bought tickets -->
+      <div class="bought-tickets"></div>
+    </div>
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>You have Successfully bought the tickets.</p>
+        </div>
+      
+      </div>
+
+</div>
+<div class="additional-content">
+    <div class="slider">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</div>
+    <script src="./ticketForm.js"></script>
+  </body>
+</html>
